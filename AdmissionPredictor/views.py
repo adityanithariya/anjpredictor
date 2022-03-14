@@ -1,7 +1,19 @@
 from django.shortcuts import render
 
 def index(req):
-    a = {
-        "ls": [0, 1, 2, 3]
+    context = {
+        
     }
-    return render(req, "index.html", context=a)
+    return render(req, "AdmissionPredictor/admission.html", context=context)
+
+def getData(req):
+    return render(req, "AdmissionPredictor/getData.html")
+
+def predict(req):
+    return render(req, "AdmissionPredictor/predict.html")
+
+def signIn(req):
+    return render(req, "AdmissionPredictor/signIn.html")
+
+def signUp(req):
+    return render(req, "AdmissionPredictor/signUp.html")
