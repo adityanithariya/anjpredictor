@@ -5,3 +5,7 @@ TensorFlow.txt
 Decision Flowchart Template.png
 Data Input.xlsx
 Data Input.csv
+id_rsa
+id_rsa.pub
+AdmissionPredictor/__pycache__
+db.sqlite3
