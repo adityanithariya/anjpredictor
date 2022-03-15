@@ -7,13 +7,45 @@
     <title>
         {% block title %}{% endblock title %}
     </title>
+    <link rel="stylesheet" href="../static/base.css">
     <style>
         {% block style %}{% endblock style %}
     </style>
 </head>
 <body>
+    <header>
+        <div class="logodiv" id="headerdiv">
+            <a href="#" id="logoanchor"></a>
+            <nav>
+                <div><a href="#">Home</a></div>
+                <div><a href="#">Support</a></div>
+                <div><a href="#">About Us</a></div>
+                <div><a href="#">Contact Us</a></div>
+            </nav>
+        </div>
+    </header>
     {% block body %}
     {% endblock body %}
+    <footer>
+        <div id="footerupperdiv">
+            <div class="logodiv" id="footerlogo">
+                <a href="/index"><img src="../static/images/logo.png" alt="Logo" class="logoimg"></a>
+            </div>
+            <div id="footersocials">
+                <div><a href="facebook.com"><img src="https://facebook.com/images/fb_icon_325x325.png" alt="Facebook" class="socialsimg"></a></div>
+                <div><a href="instagram.com"><img src="https://instagram.com/static/images/ico/favicon-192.png/68d99ba29cc8.png" alt="Instagram" class="socialsimg"></a></div>
+                <div><a href="twitter.com"><img src="https://abs.twimg.com/favicons/twitter.2.ico" alt="Twitter" class="socialsimg"></a></div>
+            </div>
+            <div id="footercopyright">
+                Company Name. <strong>All Rights Reserved</strong>
+            </div>
+        </div>
+        <div id="termprivacydiv">
+            <small id="termprivacy">
+                <a href="/tnc">Terms & Conditions</a> | <a href="/privpol">Privacy Policy</a>
+            </small>
+        </div>
+    </footer>
     <script>
         {% block script %}
         {% endblock script %}

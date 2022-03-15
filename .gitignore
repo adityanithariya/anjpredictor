@@ -1,25 +1,2 @@
-<<<<<<< HEAD
-SIH PS/
-.ipynb_checkpoints/
-Admission&Job Predictor.pptx
-TensorFlow.txt
-Decision Flowchart Template.png
-Data Input.xlsx
-Data Input.csv
-id_rsa
-id_rsa.pub
-AdmissionPredictor/__pycache__
-db.sqlite3
-||||||| parent of 278d368 (Apps Added, Endpoint Tree Created)
-=======
-SIH PS/
-.ipynb_checkpoints/
-Admission&Job Predictor.pptx
-TensorFlow.txt
-Decision Flowchart Template.png
-Data Input.xlsx
-Data Input.csv
 __pycache__/
-migrations/
 db.sqlite3
->>>>>>> 278d368 (Apps Added, Endpoint Tree Created)
