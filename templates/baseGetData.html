@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% block head %}{% endblock head %}
     <title>
         {% block title %}{% endblock title %}
     </title>
-    <link rel="stylesheet" href="../static/base.css">
+    <link rel="stylesheet" href="/static/base.css">
     <style>
         {% block style %}{% endblock style %}
     </style>
@@ -29,7 +30,7 @@
     <footer>
         <div id="footerupperdiv">
             <div class="logodiv" id="footerlogo">
-                <a href="/index"><img src="../static/images/logo.png" alt="Logo" class="logoimg"></a>
+                <a href="/index"><img src="/static/images/logo.png" alt="Logo" class="logoimg"></a>
             </div>
             <div id="footersocials">
                 <div><a href="facebook.com"><img src="https://facebook.com/images/fb_icon_325x325.png" alt="Facebook" class="socialsimg"></a></div>

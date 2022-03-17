@@ -20,6 +20,12 @@ a {
     width: 50px;
 }
 
+header {
+    padding-top: 10px;
+    background: rgba(205, 209, 211, .7);
+    border: rgba(205, 209, 211, .7) solid;
+}
+
 #headerdiv {
     display: flex;
     flex-direction: column;
@@ -42,7 +48,6 @@ nav {
     display: flex;
     flex-direction: row;
     padding: 0 1%;
-    margin-top: 10px;
 }
 
 nav div {
@@ -80,7 +85,7 @@ footer {
     justify-content: center;
     align-content: center;
     align-items: center;
-    margin: 3.875rem 0;
+    margin: 3.7rem 0;
     flex-direction: column;
     padding-bottom: 14px;
 }

@@ -1,15 +1,21 @@
-{% extends '../base.html' %}
+{% extends 'baseGetData.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/getData.css">
+
+{% endblock head %}
 
 {% block title %}
 
 {% endblock title %}
 
-{% block style %}
-
-{% endblock style %}
-
 {% block body %}
-
+<form action="/admission/predict/" method="post">
+    <div class="form" id="first-input">
+        <input type="text" name="input" id="input" class="form-input" placeholder=" ">
+        <label for="input" class="form-label">Input</label>
+    </div>
+</form>
 {% endblock body %}
 
 {% block script %}

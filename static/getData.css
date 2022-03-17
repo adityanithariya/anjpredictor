@@ -1,0 +1,51 @@
+#first-input {
+    margin-top: 100px;
+}
+
+.form {
+    display: grid;
+    place-items: center;
+    margin: 23px 0;
+}
+
+.form-input {
+    background-color: rgba(145, 131, 122, 0.7);
+    outline: none;
+    color: aliceblue;
+    width: 280px;
+    height: 21px;
+    border: 2px solid rgba(240, 248, 255, 0.8);
+    border-radius: 5px;
+    font-size: 18px;
+    padding: 4px 10px;
+    position: relative;
+    left: 2rem;
+    top: 0rem;
+    transition: left .3s, margin-bottom .3s;
+}
+
+.form-label {
+    position: relative;
+    left: -5.3rem;
+    top: -1.5rem;
+    color: aliceblue;
+    font-family: Roboto, sans-serif;
+    transition: left 1s, top 0.3s, font-size .3s;
+}
+
+.form-input:focus {
+    border-color: rgb(91 72 65);
+}
+
+.form-input:focus,
+.form-input:not(:placeholder-shown).form-input:not(:focus) {
+    margin-bottom: 6px;
+}
+
+.form-input:focus + .form-label,
+.form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
+    left: -6rem;
+    top: -3.2rem;
+    font-size: 10px;
+    
+}
