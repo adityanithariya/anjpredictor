@@ -1,11 +1,22 @@
-#first-input {
-    margin-top: 100px;
+#main-form {
+    backdrop-filter: blur(5px);
+    margin: 100px 200px;
+    box-shadow: 0px 3px 10px rgb(0 0 0 / 80%);
+    position: sticky;
+    top: 150px;
+}
+
+#login-h2 {
+    font-family: Roboto, sans-serif;
+    color: aliceblue;
+    font-weight: 100;
+    margin-top: 57px;
 }
 
 .form {
     display: grid;
     place-items: center;
-    margin: 23px 0;
+    margin: 15px 0;
 }
 
 .form-input {
@@ -19,18 +30,19 @@
     font-size: 18px;
     padding: 4px 10px;
     position: relative;
-    left: 2rem;
+    left: 0rem;
     top: 0rem;
-    transition: left .3s, margin-bottom .3s;
+    transition: left 0.3s, margin-bottom 0.3s;
 }
 
 .form-label {
     position: relative;
-    left: -5.3rem;
+    left: -6.4rem;
     top: -1.5rem;
-    color: aliceblue;
+    color: rgba(240, 248, 255, 0.7);
     font-family: Roboto, sans-serif;
-    transition: left 1s, top 0.3s, font-size .3s;
+    transition: left 1s, top 0.3s, font-size 0.3s, color 0.3s;
+    cursor: text;
 }
 
 .form-input:focus {
@@ -44,8 +56,84 @@
 
 .form-input:focus + .form-label,
 .form-input:not(:placeholder-shown).form-input:not(:focus) ~ .form-label {
-    left: -6rem;
+    left: -7.5rem !important;
     top: -3.2rem;
     font-size: 10px;
-    
+    color: aliceblue;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+
+#icon-label {
+    color: aliceblue;
+    background-color: rgba(145, 131, 122, 0.7);
+    outline: none;
+    width: 280px;
+    height: 21px;
+    left: 0rem !important;
+    top: 0rem !important;
+    border: 2px solid rgba(240, 248, 255, 0.8);
+    border-radius: 5px;
+    font-size: 17px;
+    padding: 4px 10px;
+    padding-top: 6px !important;
+    cursor: pointer;
+    transition: font-size 0.3s;
+}
+
+#icon-label:hover {
+    border-color: rgb(91 72 65);
+}
+
+#file-icon {
+    display: inline;
+    font-size: 17px;
+    transition: font-size 0.3s;
+    cursor: pointer;
+}
+
+#file-label {
+    position: relative;
+    top: -0.1rem;
+    transition: font-size 0.3s, top 0.3s, left 1s;
+}
+
+#file-name {
+    position: relative;
+    top: -0.1rem;
+    left: -2rem;
+    display: none;
+    transition: display 0.3s, left 0.3s;
+}
+
+#submit-div {
+    margin-top: 37px;
+}
+
+#submit-btn {
+    position: relative;
+    width: 107px;
+    height: 36px;
+    padding-top: 4px;
+    margin-bottom: 76px;
+    font-size: 17px;
+    font-family: Roboto, sans-serif;
+    color: aliceblue;
+    background-color: rgba(145, 131, 122, 0.7);
+    border: 2px solid aliceblue;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: font-size 0.3s;
+}
+
+#submit-btn:hover {
+    border-color: rgb(91 72 65);
+    font-size: 18px;
+}
+
+star{
+    color: red !important;
 }

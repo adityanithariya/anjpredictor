@@ -2,22 +2,65 @@
 
 {% block head %}
 <link rel="stylesheet" href="/static/getData.css">
-
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 {% endblock head %}
 
 {% block title %}
-
+Login
 {% endblock title %}
 
 {% block body %}
-<form action="/admission/predict/" method="post">
-    <div class="form" id="first-input">
-        <input type="text" name="input" id="input" class="form-input" placeholder=" ">
-        <label for="input" class="form-label">Input</label>
+<form action="/admission/predict/" method="post" enctype="multipart/form-data" id="main-form">
+    <div class="form">
+        <label for="username">
+            <h2 id="login-h2">Admission Predictor</h2>
+        </label>
+    </div>
+    {% csrf_token %}
+    <div class="form">
+        <input type="text" name="username" id="username" class="form-input" placeholder=" ">
+        <label for="username" class="form-label">Name</label>
+    </div>
+    <div class="form">
+        <input type="text" name="username" id="username" class="form-input" placeholder=" ">
+        <label for="username" class="form-label">Category<star>*</star></label>
+    </div>
+    <div class="form">
+        <input type="text" name="username" id="username" class="form-input" placeholder=" ">
+        <label for="username" class="form-label">State<star>*</star></label>
+    </div>
+    <div class="form">
+        <input type="text" name="username" id="username" class="form-input" placeholder=" ">
+        <label for="username" class="form-label">Gender<star>*</star></label>
+    </div>
+    <div class="form">
+        <input type="text" name="username" id="username" class="form-input" placeholder=" ">
+        <label for="username" class="form-label">Branch<star>*</star></label>
+    </div>
+    <div class="form">
+        <input type="text" name="username" id="username" class="form-input" placeholder=" ">
+        <label for="username" class="form-label">12th Score<star>*</star></label>
+    </div>
+    {% comment %} <div class="form">
+        <input type="password" name="password" id="password" class="form-input" placeholder=" ">
+        <label for="password" id="password-label" class="form-label">Password</label>
+    </div> {% endcomment %}
+    {% comment %} <div class="form">
+        <input type="file" name="file" id="file-input" class="form-input" accept=".csv">
+        <label for="file-input" class="form-label" id="icon-label">
+            <span class="material-icons" id="file-icon">
+                description
+            </span>
+            <span id="file-label">File</span>
+            <span id="file-name">File Name</span>
+        </label>
+    </div> {% endcomment %}
+    <div class="form" id="submit-div">
+        <button type="submit" id="submit-btn">Submit</button>
     </div>
 </form>
+<script src="/static/getData.js"></script>
 {% endblock body %}
 
 {% block script %}
-
 {% endblock script %}

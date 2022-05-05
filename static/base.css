@@ -3,10 +3,10 @@
 
 body {
     margin: 0%;
-    background: url("../static/images/admission-background.jpg");
-    background-size: 1550px;
+    background: url("../static/images/admission-background.png");
+    background-size: 99.1vw;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
     height: 700px;
 }
 
@@ -67,8 +67,7 @@ nav div a {
 }
 
 nav div a:hover {
-    color: #9a938d;
-    /* border: 1px solid #cdd7e9; */
+    color: rgb(91 72 65);
 }
 
 .downarrowimg {
